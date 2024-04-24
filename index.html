@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>My Portfolio</title>
+  <meta name="description" content="">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <script src="https://kit.fontawesome.com/c4f2b57994.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/c4f2b57994.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="splash" style="display: none">
+    <div id="splash_text"></div>
+  </div>
+  <header class="header">
+    <div class="header-wrapper">
+      <p class="site-title-sub">title</p>
+      <h1 class="site-title">title</h1>
+      <p class="site-description">Lorem ipsum dolor sit amet, c</p>
+    </div>
+  </header>
+  <section id="about" class="relative">
+    <h2 class="heading">ABOUT ME</h2>
+    <div class="about-wrapper">
+      <div class="profile">
+        <img class="profile-img" src="img/cocoro.jpg" alt="" width="300" height="300">
+        <div class="detail">
+          <dl>
+            <dt>名前</dt>
+            <dd></dd>
+          </dl>
+          <dl>
+            <dt>出身</dt>
+            <dd>滋賀県大津市</dd>
+          </dl>
+          <dl>
+            <dt>生息地</dt>
+            <dd>兵庫県</dd>
+          </dl>
+          <dl>
+            <dt>経歴</dt>
+            <dd>語学系の学校に行ってました<br>
+              卒業してから通関士というお仕事してます<br>
+              現在はIT系に転身しようと企み中
+            </dd>
+          </dl>
+          <dl>
+            <dt>趣味</dt>
+            <dd>勉強(自分の好きなことだけ。)<br>
+            筋トレ(かれこれ6年間ぐらい)<br>
+            料理も好きです</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="about-icon">
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+  <section id="service" class="relative">
+    <h2 class="heading">SERVICE</h2>
+    <div class="service-wrapper">
+      <div class="service-inner">
+        <div class="service-item">
+          <h3 class="service-title">WEBページ制作</h3>
+          <i class="service-icon fa-brands fa-wordpress"></i>
+          <p class="service-text">WordPressを使用してWEBページを制作いたします。既存テーマからの制作、既にお持ちのWEBページのWordPress化など、WordPressに関する事でしたら何でもご相談ください!</p>
+        </div>
+        <div class="service-item">
+          <h3 class="service-title">コーディング</h3>
+          <i class="service-icon fa-solid fa-code"></i>
+          <p class="service-text">お客様から頂いたデザイン通りのコ－ディングを行います。コーディング後にテストを行い、品質もしっかりと担保いたします。</p>
+        </div>
+      </div>
+      <h3 class="service-title">使用言語、ツール</h3>
+      <ul class="service-list">
+        <li><i class="fa-solid fa-caret-right"></i>HTML/CSS</li>
+        <li><i class="fa-solid fa-caret-right"></i>JavaScript</li>
+        <li><i class="fa-solid fa-caret-right"></i>jQuery</li>
+        <li><i class="fa-solid fa-caret-right"></i>WordPress</li>
+        <li><i class="fa-solid fa-caret-right"></i>PHP</li>
+        <li><i class="fa-solid fa-caret-right"></i>PhotoShop</li>
+        <li><i class="fa-solid fa-caret-right"></i>Figma</li>
+      </ul>
+    </div>
+  </section>
+  <section id="works" class="relative">
+    <h2 class="heading">WORKS</h2>
+    <div class="works-wrapper">
+      <div class="slider">
+        <ul class="items">
+          <li class="item">
+            <img src="img/top1.jpg" alt="" width="980" height="584">
+            <p class="work-text">adsfasdfasdfadsf</p>
+          </li>
+          <li class="item">
+            <img src="img/top2.jpg" alt="" width="980" height="584">
+            <p class="work-text">asdfasdfadsfasdf</p>
+          </li>
+          <li class="item">
+            <img src="img/top3.jpg" alt="" width="980" height="584">
+            <p class="work-text">asdfasdfadsfasdf</p>
+          </li>
+          <li class="item">
+            <img src="img/top4.jpg" alt="" width="980" height="584">
+            <p class="work-text">asdfasdfasdfasdf</p>
+          </li>
+        </ul>
+        <div class="buttons">
+          <button type="button" id="pre" class="button pre">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button type="button" id="next" class="button next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="price" class="relative">
+    <div class="price-wrapper">
+      <h2 class="heading">PRICE</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">項目</th>
+            <th scope="col">金額(税抜き)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">下層ページコーディング</th>
+            <td>￥5,000 ～</td>
+          </tr>
+          <tr>
+            <th scope="row">トップページコーディング</th>
+            <td>￥10,000 ～</td>
+          </tr>
+          <tr>
+            <th scope="row">LPコーディング</th>
+            <td>￥10,000 ～</td>
+          </tr>
+          <tr>
+            <th scope="row">既存WEBページのWordPress化</th>
+            <td>￥50,000 ～</td>
+          </tr>
+          <tr>
+            <th scope="row">WordPressによるWEBページ作成</th>
+            <td>￥100,000 ～</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>※レスポンシブWEBデザインの費用は、上記価格に含まれております。</p>
+      <p>※デザイン、画像などの素材、テキストなど、全てご準備いただいた場合の価格です。こちらでご用意することも可能ですが、別途費用を頂戴いたします。</p>
+    </div>
+  </section>
+  <section id="contact" class="relative">
+    <h2 class="heading">CONTACT</h2>
+    <form class="contact-form">
+      <p>お気軽にご連絡いただけますと幸いです。2日以内にご返信させていただきます。</p>
+      <input type="text" name="name" placeholder="NAME">
+      <input type="email" name="email" placeholder="E-MAIL">
+      <textarea name="message" name="message" placeholder="MESSAGE"></textarea>
+      <input type="submit" value="SEND">
+    </form>
+  </section>
+  <footer class="footer" class="container">
+      &copy; copyright
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script src="js/progressbar.min.js"></script> -->
+  <!-- <script src="js/progressbarCircle.js"></script> -->
+  <script src="js/slider2.js"></script>
+  
+</body>
+</html>
