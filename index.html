@@ -16,16 +16,36 @@
   <script src="https://kit.fontawesome.com/c4f2b57994.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="splash" style="display: none">
-    <div id="splash_text"></div>
-  </div>
-  <header class="header">
-    <div class="header-wrapper">
-      <p class="site-title-sub">title</p>
-      <h1 class="site-title">title</h1>
-      <p class="site-description">Lorem ipsum dolor sit amet, c</p>
+  <!-- <div id="splash" style="display: none"> -->
+    <!-- <div id="splash_text"></div> -->
+  <!-- </div> -->
+  <header>
+    <div class="hamburger-btn">
+      <div class="hamburger-btn-area">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mask">
+      <ul class="mask-list">
+        <li><a href="./#about">About</a></li>
+        <li><a href="./#service">Service</a></li>
+        <li><a href="./#works">Works</a></li>
+        <li><a href="./#price">Price</a></li>
+        <li><a href="./#concept">Concept</a></li>
+        <li><a href="./#contact">Contact</a></li>
+      </ul>
     </div>
   </header>
+  <section id="mv" class="mv">
+    <div class="mv-wrapper">
+      <p class="site-title-sub">My Portfolio</p>
+      <h1 class="site-title">title</h1>
+      <p class="site-description">Web </p>
+    </div>
+    <div class="background-lines">
+
+    </div>
+  </section>
   <section id="about" class="relative">
     <h2 class="heading">ABOUT ME</h2>
     <div class="about-wrapper">
@@ -34,7 +54,7 @@
         <div class="detail">
           <dl>
             <dt>名前</dt>
-            <dd></dd>
+            <dd>すぎした</dd>
           </dl>
           <dl>
             <dt>出身</dt>
@@ -65,7 +85,7 @@
         <a href=""><i class="fa-brands fa-github"></i></a>
       </div>
       
-          <i class="pawprint fa-solid fa-paw"></i>
+      <!-- <i class="pawprint fa-solid fa-paw"></i> -->
         
     </div>
   </section>
@@ -170,15 +190,15 @@
     <div class="concept-wrapper">
       <h2 class="heading">CONCEPT</h2>
       <div>
-        <h2 class="section-title-sub">お仕事をさせていただく上でのお約束<i class="inner-icon fa-regular fa-handshake"></i></h2>
+        <h2 class="section-title-sub"><i class="inner-icon fa-regular fa-handshake"></i>お仕事をさせていただく上でのお約束<i class="inner-icon fa-regular fa-handshake"></i></h2>
         <ul>
           <li class="concept-item">
             <i class="inner-icon fa-regular fa-circle-check"></i>
-            一人の人間として、社会人としての礼節を大切にします。「返事が返ってこない、遅い」「納期を守らない」など、お仕事をさせていただく以前の問題だと思います。最低限・最大限のマナーを遵守します。
+            一人の人間として、社会人としての礼儀・マナーを大切にします。「返事が返ってこない、遅い」「納期を守らない」など、お仕事をさせていただく上での最低限・最大限のマナーを遵守します。
           </li>
           <li class="concept-item">
             <i class="inner-icon fa-regular fa-circle-check"></i>
-            正確に、スピードィなコーディングを心掛けます。正確さとスピードは相性が悪いかもしれません。ですが両立させることがとても大切だと思います。正確さとスピードの二刀流でお客様の満足を高めます。
+            正確に、スピーディなコーディングを心掛けます。どんなお仕事でも、正確さとスピードを両立させることがとても大切だと思います。正確さとスピードの二刀流でお客様の満足を高めます。
           </li>
           <li class="concept-item">
             <i class="inner-icon fa-regular fa-circle-check"></i>
@@ -187,8 +207,7 @@
           </li>
           <li class="concept-item">
             <i class="inner-icon fa-regular fa-circle-check"></i>
-            どのような製品、サービスでもテストをクリアしたものが市場に出回っていると思います。最大限品質を保証するために、お客様への納品前に必ずテストを行います。リンク切れはないか、アニメーションはきちんと動作するか、品質を担保するための努力・工夫を欠かしません。
-
+            最大限の品質を保証するために、お客様への納品前に必ずテストを行います。リンク切れはないか、アニメーションはきちんと動作するか、品質を担保するための努力・工夫を欠かしません。
           </li>
         </ul>
       </div>
@@ -197,7 +216,7 @@
   <section id="contact" class="relative">
     <h2 class="heading">CONTACT</h2>
     <form class="contact-form">
-      <p>お気軽にご連絡いただけますと幸いです。〇〇中にご返信させていただきます。</p>
+      <p>お気軽にご連絡いただけますと幸いです。24時間以内にご返信させていただきます。</p>
       <input type="text" name="name" placeholder="NAME">
       <input type="email" name="email" placeholder="E-MAIL">
       <textarea name="message" name="message" placeholder="MESSAGE"></textarea>
@@ -210,7 +229,9 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- <script src="js/progressbar.min.js"></script> -->
   <!-- <script src="js/progressbarCircle.js"></script> -->
-  <script src="js/slider2.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/menu-slider.js"></script>
   <script src="js/pawprints.js"></script>
+  <script src="js/line.js"></script>
 </body>
 </html>

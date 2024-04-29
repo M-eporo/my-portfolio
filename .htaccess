@@ -1,0 +1,5 @@
+AuthUserFile /home/users/1/versus.jp-shu-ji-810/web/creative-shu-ji.online/portfolio/.htpasswd
+AuthGroupFile /dev/null
+AuthName "ID、パスワードを入力してください。"
+AuthType Basic
+require valid-user
