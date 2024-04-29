@@ -87,17 +87,40 @@ p, h3, a, li, input, th, td, dt, dd {
   left: 0;
   border-bottom: 1px solid var(--color-lightgrey);
 }
-
 .heading::before {
   bottom: 5px;
 }
-
 .relative {
   position: relative;
 }
 .inner-icon {
   margin-left: 0.2em;
 }
+
+.top-btn {
+  display: none;
+  position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: block;
+	width: 40px;
+	height: 40px;
+  background-color: rgba(0,0,0,0.5);
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+  font-size: 0;
+	text-decoration: none;
+}
+.top-btn > i {
+  display: inline-block;
+  width: 100%;
+	height: 100%;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: -25px;
+}
+
 /* ----------
  * mv
 ---------- */
@@ -123,14 +146,17 @@ p, h3, a, li, input, th, td, dt, dd {
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
   transform: translateY(-50%) translateX(-50%);
 }
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
-  font-size: 2.2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(28px, 2.27vw + 19.4px, 46px);
 }
-
 .site-title-sub::before,
 .site-title-sub::after {
   content: '';
@@ -138,39 +164,45 @@ p, h3, a, li, input, th, td, dt, dd {
   width: 140px;
   height: 2px;
   margin: 0 30px;
-  background-color: var(--color-white);
+  background-color: var(--color-orange);
   vertical-align: middle;
 }
+@media (max-width: 768px) {
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    min-width: clamp(180px, 141.832px + 10.17vw, 220px);
+    margin: 0 auto;
+  }
+}
 .site-title {
+  width: 100%;
   margin: 50px 0 40px;
-  font-size: 7.6rem;
+  padding: 0 0 0 clamp(48px, 26.8vw + -52.526px, 430px);
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  text-align: left;
+
 }
-.background-lines {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  pointer-events: none;
+.site-title > span {
+  display: inline;
+  font-size: clamp(56px, 9.1vw + 21px, 1166px);
 }
-.background-line {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-orange);
-  animation-name: moveLine;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.site-title > span:nth-of-type(2){
+  margin-left: 0.5em;
 }
-@keyframes moveLine {
-  from {
-    left: 0;
-  }
-  to {
-    left: 100%;
-  }
+.site-description {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(22px, 1.26vw + 17.259px, 32px);
 }
+.roll-animation.roll span {
+  transition-property: opacity, transform;
+  transform: rotateY(360deg);
+  transition: all 0.8s cubic-bezier(.77, 0, .175, 1);
+  transition-timing-function: cubic-bezier(.77, 0, .175, 1);
+  display: inline-block;
+}
+
 /* ----------
  * hamburger
 ---------- */
