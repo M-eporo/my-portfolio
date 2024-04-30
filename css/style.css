@@ -37,32 +37,7 @@ p {
 p, h3, a, li, input, th, td, dt, dd {
   letter-spacing: 0.15em;
 }
-/* ----------
- * loading
----------- */
-/*
-#splash {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-white);
-  text-align: center;
-  color: var(--color-white);
-}
 
-#splash_text {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
 /* ----------
  * parts
 ---------- */
@@ -77,7 +52,6 @@ p, h3, a, li, input, th, td, dt, dd {
   font-family: "Raleway", sans-serif;
   letter-spacing: .23em;
 }
-
 .heading::before,
 .heading::after {
   content: "";
@@ -96,7 +70,6 @@ p, h3, a, li, input, th, td, dt, dd {
 .inner-icon {
   margin-left: 0.2em;
 }
-
 .top-btn {
   display: none;
   position: fixed;
@@ -166,7 +139,7 @@ p, h3, a, li, input, th, td, dt, dd {
   background-color: var(--color-orange);
   vertical-align: middle;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .site-title-sub::before,
   .site-title-sub::after {
     display: block;
@@ -181,7 +154,6 @@ p, h3, a, li, input, th, td, dt, dd {
   font-family: "Raleway", sans-serif;
   font-style: italic;
   text-align: left;
-
 }
 .site-title > span {
   display: inline;
@@ -327,6 +299,7 @@ p, h3, a, li, input, th, td, dt, dd {
 .mask-list li:nth-of-type(6) {
   transform: rotate(-90deg);
 }
+
 /* ----------
  * about
 ---------- */
@@ -349,7 +322,6 @@ p, h3, a, li, input, th, td, dt, dd {
   padding: 25px 0;
   gap: 4.137%;
 }
-
 .profile-img {
   width: 330px;
   height: 330px;
@@ -370,7 +342,6 @@ dd {
   margin: 0 0 0 1em;
   line-height: 2; 
 }
-
 .about-icon {
   text-align: right;
 }
@@ -387,7 +358,6 @@ dd {
   font-size: 32px;
   cursor: pointer;
 }
-
 .pawprint {
   position: absolute;
   top: 50%;
@@ -457,13 +427,11 @@ dd {
   height: 100%;
   margin: 0;
 }
-
 .item > img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .buttons{
   position: absolute;
   z-index: 2;
@@ -510,6 +478,7 @@ dd {
   color: var(--color-white);
   z-index: 15;
 }
+
 /* ----------
  * service
  * ---------- */
@@ -563,7 +532,11 @@ dd {
   .service-inner {
     display: block;
   }
+  .service-list > li {
+    margin-right: 1.0em;
+  }
 }
+
 /* ----------
  * price
  * ---------- */
@@ -640,6 +613,7 @@ tbody td {
   margin: 30px;
   line-height: 2;
 }
+
 /* ----------
  * contact
  * ---------- */
@@ -698,4 +672,3 @@ tbody td {
   background: var(--color-white);
   color: var(--color-black);
 }
-

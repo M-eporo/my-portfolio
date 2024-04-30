@@ -10,13 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- <div id="splash" style="display: none"> -->
-    <!-- <div id="splash_text"></div> -->
-  <!-- </div> -->
   <header>
     <div class="hamburger-btn">
       <div class="hamburger-btn-area">
@@ -62,14 +58,14 @@
           <dl>
             <dt>経歴</dt>
             <dd>語学系の学校出身<br>
-              卒業、貿易関係のお仕事<br>
+              卒業後、貿易関係のお仕事<br>
               現在IT系に転身しようと企み中
             </dd>
           </dl>
           <dl>
             <dt>趣味</dt>
             <dd>勉強(自分の好きなことは特に)<br>
-            筋トレ(かれこれ6年間ぐらい)<br>
+            筋トレ(かれこれ<span id="year"></span>年間ぐらい)<br>
             筋トレ効果で体重20KG<i class="inner-icon fa-solid fa-arrow-turn-up fa-bounce"></i><br>
             料理も好きです</dd>
           </dl>
@@ -195,7 +191,6 @@
           <li class="concept-item">
             <i class="inner-icon fa-regular fa-circle-check"></i>
             WEB業界の変化・発展の速度は目を見張るものがあります。最新の技術を提供できるように学びを怠らず、常に自分自身をアップデートしスキルを吸収していきます。そして商品にアウトプットしていきます。
-
           </li>
           <li class="concept-item">
             <i class="inner-icon fa-regular fa-circle-check"></i>
@@ -218,17 +213,13 @@
   <footer class="footer" class="container">
       &copy; copyright
   </footer>
-  
   <a href="#" class="top-btn">
     <i class="fa-solid fa-arrow-up"></i>
   </a>
-
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!-- <script src="js/progressbar.min.js"></script> -->
-  <!-- <script src="js/progressbarCircle.js"></script> -->
+  <script src="js/year.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/menu-slider.js"></script>
-  <script src="js/pawprints.js"></script>
   <script src="js/scroll-slow.js"></script>
   <script src="js/text-animation.js"></script>
 </body>
