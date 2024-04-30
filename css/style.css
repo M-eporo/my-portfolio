@@ -102,7 +102,6 @@ p, h3, a, li, input, th, td, dt, dd {
   position: fixed;
 	bottom: 30px;
 	right: 30px;
-	display: block;
 	width: 40px;
 	height: 40px;
   background-color: rgba(0,0,0,0.5);
@@ -210,8 +209,8 @@ p, h3, a, li, input, th, td, dt, dd {
 	position: fixed;
   top: 32px;
   right: 32px;
-	width: 32px;
-	height: 32px;
+	width: 34px;
+	height: 34px;
 	border-radius: 3px;
 	cursor: pointer;
 	z-index: 999;
@@ -239,10 +238,10 @@ p, h3, a, li, input, th, td, dt, dd {
 	top: 4px;
 }
 .hamburger-btn span:nth-of-type(2) {
-	top: 15px;
+	top: 16px;
 }
 .hamburger-btn span:nth-of-type(3) {
-	top: 26px;
+	top: 27px;
 }
 .hamburger-btn.open  span {
 	background-color: var(--color-black);
