@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-chacoal);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", Arial, sans-serif;
 }
 img {
   display: block;
@@ -670,6 +670,7 @@ tbody td {
 }
 .contact-form textarea {
   height: 150px;
+  font-family: Arial, sans-serif;
 }
 .contact-form input[type="submit"] {
   display: block;
