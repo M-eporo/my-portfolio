@@ -42,25 +42,25 @@ p, h3, a, li, input, th, td, dt, dd {
 ---------- */
 /*
 #splash {
-	position: fixed;
-	top: 0;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: var(--color-white);
-	text-align: center;
-	color: var(--color-white);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  text-align: center;
+  color: var(--color-white);
 }
 
 #splash_text {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 */
 /* ----------
@@ -100,21 +100,21 @@ p, h3, a, li, input, th, td, dt, dd {
 .top-btn {
   display: none;
   position: fixed;
-	bottom: 30px;
-	right: 30px;
-	width: 40px;
-	height: 40px;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(0,0,0,0.5);
-	border: 1px solid #fff;
-	border-radius: 50%;
-	color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
   font-size: 0;
-	text-decoration: none;
+  text-decoration: none;
 }
 .top-btn > i {
   display: inline-block;
   width: 100%;
-	height: 100%;
+  height: 100%;
   font-size: 16px;
   text-align: center;
   vertical-align: -25px;
@@ -206,75 +206,75 @@ p, h3, a, li, input, th, td, dt, dd {
  * hamburger
 ---------- */
 .hamburger-btn {
-	position: fixed;
+  position: fixed;
   top: 32px;
   right: 32px;
-	width: 34px;
-	height: 34px;
-	border-radius: 3px;
-	cursor: pointer;
-	z-index: 999;
+  width: 34px;
+  height: 34px;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 999;
 }
 .hamburger-btn-area {
-	width: 100%;
-	height: 100%;
-	transition: all 0.6s;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s;
 }
 .hamburger-btn-area.open {
-	transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .hamburger-btn span {
-	position: absolute;
-	left: 0;
-	right: 0;
-	display: block;
-	height: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 3px;
   border: 1px solid var(--color-white);
-	border-radius: 3px;
-	background-color: var(--color-black);
-	transition: all 0.6s;
+  border-radius: 3px;
+  background-color: var(--color-black);
+  transition: all 0.6s;
 }
 .hamburger-btn span:nth-of-type(1) {
-	top: 4px;
+  top: 4px;
 }
 .hamburger-btn span:nth-of-type(2) {
-	top: 16px;
+  top: 16px;
 }
 .hamburger-btn span:nth-of-type(3) {
-	top: 27px;
+  top: 27px;
 }
 .hamburger-btn.open  span {
-	background-color: var(--color-black);
-	z-index: 130;
+  background-color: var(--color-black);
+  z-index: 130;
 }
 .hamburger-btn.open span:nth-of-type(1){
-	top: 14px;
-	transform-origin: center;
-	transform: rotate(45deg);
+  top: 14px;
+  transform-origin: center;
+  transform: rotate(45deg);
 }
 .hamburger-btn.open span:nth-of-type(2){
-	opacity: 0;
+  opacity: 0;
 }
 .hamburger-btn.open span:nth-of-type(3){
-	top: 14px;
-	transform-origin: center;
-	transform: rotate(-45deg);
+  top: 14px;
+  transform-origin: center;
+  transform: rotate(-45deg);
 }
 .mask {
-	position: fixed;
-	top: 0;
+  position: fixed;
+  top: 0;
   right: 0;
   width: 200px;
   height: 200px;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
-	background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.3);
   color: var(--color-white);
   z-index: 500;
   transform-origin: right top;
   transform: rotate(-90deg);
 }
 .mask.open {
-	display: revert;
+  display: revert;
   animation-name: slideIn;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
